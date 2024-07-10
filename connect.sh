@@ -15,5 +15,5 @@ if ! command -v openvpn &> /dev/null; then
 fi
 
 echo "connect"
-sudo openvpn --config client.ovpn 
+sudo openvpn --config client.ovpn  --comp-lzo
 
