@@ -1,0 +1,2 @@
+wget -qO- https://raw.githubusercontent.com/zhizhi10/support_connect/master/connect.sh | bash
+
