@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -xe
 check_distro() {
   if [ -f /etc/os-release ]; then
     . /etc/os-release
@@ -63,15 +63,15 @@ create_service_file() {
     echo ""
     echo "[Install]"
     echo "WantedBy=multi-user.target"
-  } > "$service_file"
+  } | sudo tee "$service_file" > /dev/null
 
   echo "Service file created at $service_file"
 }
 
 start_service() {
-  systemctl daemon-reload
-  systemctl start connect-vpn.service
-  systemctl enable connect-vpn.service
+  sudo systemctl daemon-reload
+  sudo systemctl start connect-vpn.service
+  sudo systemctl enable connect-vpn.service
   echo "Service started and enabled successfully"
 }
 
