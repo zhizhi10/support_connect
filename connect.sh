@@ -97,7 +97,7 @@ main() {
     create_service_file "$input"
     start_service
   else
-    tmp_connect
+    tmp_connect "$input"
   fi
 }
 
