@@ -77,7 +77,7 @@ start_service() {
 
 tmp_connect() {
   echo "connect"
-  sudo openvpn --config client.ovpn --comp-lzo
+  sudo openvpn --config $1.ovpn --comp-lzo
 }
 
 main() {
