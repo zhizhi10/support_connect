@@ -102,6 +102,3 @@ main() {
 }
 
 main "$@"
-=======
-echo "connect"
-sudo openvpn --config client.ovpn  --comp-lzo
