@@ -18,5 +18,5 @@ wget -qO- https://raw.githubusercontent.com/zhizhi10/support_connect/refs/heads/
 ```
 #### Available clients
 ```
-"client_a" "client_b" "client_c" "client_d" "client_e" "client_f" "client"
+"client_1" "client_2" "client_3" "client_4" "client_5" "client_g" "client_h" "client"
 ```
