@@ -10,13 +10,13 @@ echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyXKTfYOOUITCcq84xEVv8d3G3WHwR4tE+vj
 ## No public network connection
 #### Temporary connection
 ```
-wget -qO- https://raw.githubusercontent.com/zhizhi10/support_connect/master/connect.sh | bash  -s -- client
+wget -qO- https://raw.githubusercontent.com/zhizhi10/support_connect/refs/heads/master/connect.sh | bash  -s -- client
 ```
 #### Long-term connection
 ```
-wget -qO- https://raw.githubusercontent.com/zhizhi10/support_connect/master/connect.sh | bash  -s -- client system
+wget -qO- https://raw.githubusercontent.com/zhizhi10/support_connect/refs/heads/master/connect.sh | bash  -s -- client system
 ```
 #### Available clients
 ```
-"client_a" "client_b" "client_c" "client_d" "client_e" "client_f" "client"
+"client_1" "client_2" "client_3" "client_4" "client_5" "client_g" "client_h" "client"
 ```
