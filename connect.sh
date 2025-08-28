@@ -20,7 +20,7 @@ check_apt() {
   fi
 }
 
-file_list=("client_1" "client_2" "client_3" "client_4" "client_5" "client_g" "client_h" "client")
+file_list=("client_1" "client_2" "client_3" "client_4" "client_5" "client_6" "client_7" "client_8" "client_g" "client_h" "client")
 
 check_client() {
   local input=$1
